@@ -6,10 +6,14 @@ int main(){
     float marks;
     printf("Enter your marks: ");
     scanf("%f", &marks);
-    if(marks <= 30){
+    if(marks > 0 && marks <= 30){
         printf("You are fail");
-    }else{
-        printf("You are passed.");
+    
+    }else if(marks > 30 && marks <= 100){
+        printf("You are passed");
+    }
+    else{
+        printf("Wrong input.");
     }
     return 0;
 }
